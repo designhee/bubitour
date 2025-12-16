@@ -1,0 +1,3004 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>부산시티투어버스 부비투어</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- wow css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Material Symbols 구글 아이콘 -->
+    <link rel="stylesheet" href="fonts.googleapis.com" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon-36x36.png" type="image/x-icon">
+    <!-- css 연결-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header S -->
+        <header id="header">
+            <div class="header-popup">
+                <!-- 배경색 넣기 -->
+                <div class="header-popup__content">
+                    <!-- 가운데 정렬 -->
+                    <p class="header-popup__message">부비투어 정류장 위치 안내</p>
+                    <button type="button" class="popup__close-button" aria-label="닫기">
+                        <span>닫기</span>
+                        <img src="images/00_popup_icon_x.svg" class="popup__close-icon" alt="닫기 버튼">
+                    </button><!-- .header-popup__close-button -->
+                </div><!-- .header-popup__content -->
+            </div><!-- .header-popup -->
+
+            <div class="header__content-area">
+                <!-- 가운데 1360px -->
+                <h1 class="site-logo">
+                    <a href="#"><img src="images/00_main_logo.svg" alt="부비투어 로고"></a>
+                </h1><!-- .site-logo -->
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#intro">브랜드 소개 </a></li>
+                        <li><a href="#reservation">예약하기</a></li>
+                        <li><a href="#course">추천코스</a></li>
+                        <li><a href="#pick">부비픽</a></li>
+                        <li><a href="#md">MD상품</a></li>
+                        <li><a href="#review">탑승후기</a></li>
+                    </ul><!-- .gnb -->
+                </nav>
+                <ul class="util">
+                    <li>
+                        <a href="#">
+                            <img src="images/00_util_icon1.svg" alt="예약확인 아이콘">
+                            <p class="status-text--highlight">예약확인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/00_util_icon2.svg" alt="로그인 아이콘">
+                            <p>로그인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cs">
+                            <img src="images/00_util_icon3.svg" alt="고객센터 아이콘">
+                            <p>고객센터</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/00_util_icon4.svg" alt="">
+                            <p>KR/EN</p>
+                        </a>
+                    </li>
+                </ul><!-- .util -->
+            </div><!-- .header__content-area -->
+        </header>
+        <!-- header E -->
+
+        <!-- aside S -->
+        <aside class="aside-menu">
+            <ul>
+                <li class="aside-item reserve">
+                    <a href="#reservation">
+                        <img src="images/aside_icon1.svg" alt="예약">
+                        <span>예약</span>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a href="#cs">
+                        <img src="images/aside_icon2.svg" alt="문의">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a href="#cs">
+                        <img src="images/aside_icon3.svg" alt="고객센터">
+                        <span>고객센터</span>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a href="#map">
+                        <img src="images/aside_icon4.svg" alt="위치">
+                        <span>위치</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="aside-divider"></div>
+
+            <button class="btn-top">
+                <img src="images/aside_icon5_top.svg" alt="최상단으로 가기버튼">
+                <span>TOP</span>
+            </button>
+        </aside>
+        <!-- aside E -->
+
+        <!-- hero S -->
+        <section id="hero">
+            <div class="hero__contents">
+                <div class="hero__text-area">
+                    <div class="hero__text">
+                        <h2 class="hero__title">
+                            부비투어
+                            <br>
+                            어린이날 탑승 이벤트
+                        </h2><!-- .visual_tit -->
+                        <h3 class="hero__subtitle">
+                            버스타면 바람개비 드려요!
+                        </h3><!-- .visaul_subtit -->
+                        <a href="#" class="hero__cta-button">자세히 보기</a>
+                    </div>
+
+                    <div class="hero__controls">
+                        <div class="circle">
+                            <div class="autoplay-progress">
+                                <svg viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="20"></circle>
+                                </svg>
+                                <span class="bg"></span>
+                            </div><!-- .autoplay-progress -->
+                            <div class="play">
+                                <div class="swiper-pause"><span><i class="fa-solid fa-pause"></i></span></div>
+                                <div class="swiper-play"><span><i class="fa-solid fa-play"></i></span></div>
+                            </div><!-- .play -->
+                        </div><!-- .circle -->
+                        <div class="arrow">
+                            <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+                            <div class="pager"></div>
+                            <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+                        </div><!-- .arrow -->
+                    </div><!-- .hero__controls -->
+                </div><!-- .hero-left -->
+
+                <div class="hero_slide swiper">
+                    <ul class="hero_slide_wrapper swiper-wrapper">
+                        <li class="hero_swiper_slide swiper-slide">
+                            <div class="bg bg01"></div>
+                        </li>
+                        <li class="hero_swiper_slide swiper-slide">
+                            <div class="bg bg02"></div>
+                        </li>
+                        <li class="hero_swiper_slide swiper-slide">
+                            <div class="bg bg03"></div>
+                        </li>
+                        <li class="hero_swiper_slide swiper-slide">
+                            <div class="bg bg04"></div>
+                        </li>
+                    </ul><!-- .swiper-wrapper -->
+                </div><!-- .main_slide swiper -->
+            </div><!-- .hero__contents -->
+        </section>
+        <!-- hero E -->
+
+        <!-- main S -->
+        <main>
+            <section id="intro">
+                <!-- 배경 이미지, 애니메이션 -->
+                <div class="intro__content-area">
+                    <!-- width:1360px 가운데 정렬-->
+
+                    <div class="intro__text-area">
+                        <p class="intro__slogan" data-aos="fade-up" data-aos-duration="500">
+                            <img src="images/02_intro_slogan.svg" alt="부비투어 슬로건">
+                        </p>
+                        <p data-aos="fade-up" data-aos-duration="500">
+                            <img src="images/02_intro_slogan_2.svg" alt="부비투어 소개말">
+                        </p>
+                        <div class="intro__bus">
+                            <img data-aos="fade-up" data-aos-duration="500" src="images/02_intro_bus.png" alt="버스 일러스트">
+                        </div><!-- .intro__bus -->
+                        <!-- 바람개비 이미지 -->
+                        <div class="intro__windwheel--left">
+                            <img src="images/02_intro_windwheel01.png" alt="바람개비 왼쪽">
+                        </div><!-- .intro__windwheel--left -->
+                        <div class="intro__windwheel--right">
+                            <img src="images/02_intro_windwheel02.png" alt="바람개비 오른쪽">
+                        </div><!-- .intro__windwheel--right -->
+                    </div>
+
+                    <div id="reservation" class="tour-reservation-widget" data-aos="fade-up" data-aos-duration="500">
+                        <div class="reservation-card">
+                            <div class="reservation-card__header">
+                                <div class="reservation-card__calendar">
+                                    <p><strong>10월</strong></p>
+                                    <span><!-- 그레이 선 --></span>
+                                    <p>1~2주차</p>
+                                </div><!-- .reservation-card__calendar-->
+                                <a href="#" class="reservation-card__button">
+                                    <div>
+                                        <p class="reservation-card__button-title">투어예약</p>
+                                        <p>요일별로 예약 가능합니다</p>
+                                    </div><!-- .reservation-card__button -->
+                                </a>
+                            </div><!-- .reservation-card__header -->
+
+
+                            <!-- 예약하기 swiper -->
+                            <div class="reservation-card__date-list">
+                                <div class="swiper reservation-swiper">
+                                    <ul class="reservation-card__date-list-days swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/1(수)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 144명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--blue">예약
+                                                가능</a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/2(목)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 50명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--blue">예약
+                                                가능</a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/3(금)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 10명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--orange">마감
+                                                임박</a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/4(토)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 0명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--gray">예약
+                                                마감</a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/8(수)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 15명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--orange">마감
+                                                임박</a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/9(목)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 188명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--blue">예약
+                                                가능</a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/10(금)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 0명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--gray">예약
+                                                마감</a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <p class="reservation-card__day-name">10/11(토)</p>
+                                            <p>9:00~19:00</p>
+                                            <p>인원 : 5명</p>
+                                            <a href="#" class="reservation-card__day-button day-button--orange">마감
+                                                임박</a>
+                                        </li>
+                                    </ul><!-- .reservation-card__date-list-days .swiper-wrapper-->
+                                    <div class="swiper-button-prev reservation-swiper-button-prev"></div>
+                                    <div class="swiper-button-next reservation-swiper-button-next">
+                                    </div>
+                                </div><!-- .swiper .reservation-swiper -->
+                            </div><!-- .reservation-card__date-list -->
+                        </div><!-- .reservation-card -->
+
+                        <!-- 밑에 안내사항 -->
+                        <div class="intro__notice-widget" data-aos="fade-up" data-aos-duration="500">
+                            <ul class="notice-list">
+                                <li>
+                                    <img src="images/03_reserv_notice_icon01.svg" class="notice-list__icon01"
+                                        alt="시계 아이콘">
+                                    <h3 class="notice-list__title">버스 운행 시간</h3>
+                                    <p class="notice-list__time">09:00~22:00</p>
+                                </li>
+                                <li>
+                                    <img src="images/03_reserv_notice_icon02.svg" class="notice-list__icon02"
+                                        alt="휴일 아이콘">
+                                    <h3 class="notice-list__title">휴일 안내</h3>
+                                    <p>매주 월요일~화요일은
+                                        <br>승무원 정기 휴무일입니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="images/03_reserv_notice_icon03.svg" class="notice-list__icon03"
+                                        alt="방법 아이콘">
+                                    <h3 class="notice-list__title">이용 방법</h3>
+                                    <p>All Day Pass 티켓은 하루동안 사용 가능합니다.
+                                        <br>버스 탑승 시 이용권 팔찌를 기사님에게 보여주세요.
+                                    </p>
+                                </li>
+                            </ul><!-- .notice-list -->
+                        </div><!-- .info-notice-widget -->
+                    </div><!--.tour-reservation-widget -->
+                </div><!-- .intro__content-area-->
+            </section><!-- #intro -->
+
+            <section id="course">
+                <div class="course-tabs is-visible">
+                    <h2 class="section__title section__title--course">어디로 갈까요?</h2>
+                    <div class="course-tabs__container" data-aos="fade-up" data-aos-duration="600">
+                        <!-- 1. 상단 코스 탭 리스트 영역 -->
+                        <div class="course-tabs__list">
+
+                            <!-- 탭 1 -->
+                            <div class="course-tabs__item">
+                                <!-- Click 버튼 (활성화 시 보임) -->
+                                <button type="button" aria-label="클릭버튼" class="course-tabs__cta">
+                                    Click<i class="fa-solid fa-arrow-down"></i>
+                                </button>
+
+                                <!-- 탭 버튼 -->
+                                <a href="javascript:void(0);" data-tab-target="#tab1" class="course-tabs__button">
+                                    쪽빛 해안 절경 코스
+                                </a>
+
+                                <!-- 텍스트 설명 -->
+                                <div class="course-tabs__desc">
+                                    <p>세월을 간직한 섬과 해안<br>시간이 멈춘 듯한 감성 여행</p>
+                                </div>
+                            </div><!-- .course-tabs__item -->
+
+                            <!-- 탭 2 -->
+                            <div class="course-tabs__item">
+                                <button type="button" class="course-tabs__cta">
+                                    Click<i class="fa-solid fa-arrow-down"></i>
+                                </button>
+                                <a href="javascript:void(0);" data-tab-target="#tab2" class="course-tabs__button"
+                                    preventDefault()>
+                                    동해 바다 힐링 코스
+                                </a>
+                                <div class="course-tabs__desc">
+                                    <p>창가에 담기는 푸른 파도<br>마음까지 정화하는 해안 로드</p>
+                                </div>
+                            </div><!-- .course-tabs__item -->
+
+                            <!-- 탭 3 -->
+                            <div class="course-tabs__item">
+                                <button type="button" class="course-tabs__cta">
+                                    Click<i class="fa-solid fa-arrow-down"></i>
+                                </button>
+                                <a href="javascript:void(0);" data-tab-target="#tab3" class="course-tabs__button"
+                                    preventDefault()>
+                                    낭만 마천루 야경 코스
+                                </a>
+                                <div class="course-tabs__desc">
+                                    <p>두 개의 바다 다리를 건너<br>밤이 더 빛나는 도시의 하이라이트</p>
+                                </div>
+                            </div><!-- .course-tabs__item -->
+                        </div><!-- .course-tabs__list -->
+                    </div><!-- .course-tabs__container -->
+                </div><!-- .course-tabs -->
+
+                <!-- 2. 하단 상세 리스트 영역 -->
+                <div class="course-contents" data-aos="fade-up" data-aos-duration="1000">
+                    <!-- 탭 1의 상세 내용 -->
+                    <!-- style="display: block" 또는 CSS로 첫 번째 탭만 보이게 처리 필요 -->
+                    <div id="tab1" class="swiper CourseSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 장소 아이템 1 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-1.png" alt="자갈치">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>자갈치 BIFF 광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 맛·문화의 중심 거리</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 2 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-2.png" alt="부산역">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>KTX 부산역</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 여행의 관문 허브</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+
+                            <!-- 장소 아이템 3 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-3.png" alt="용두산공원, 부산타워">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>용두산 공원, 부산타워</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산을 내려다보는 도심 전망지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 4 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-4.png" alt="영도대교">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>영도대교</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">도개교가 들려주는 항구의 역사</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 5 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-5.png" alt="흰여울 문화마을">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>흰여울 문화마을</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">절벽 위 영화 같은 바다 마을</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 6 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-1.png" alt="송정해수욕장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>송정해수욕장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">서퍼들이 사랑하는 해변</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 7 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-2.png" alt="해동용궁사 문화마을">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>해동용궁사</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">절벽 위 아름다운 사찰</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 1 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-1.png" alt="자갈치">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>자갈치 BIFF 광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 맛·문화의 중심 거리</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 2 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-2.png" alt="부산역">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>KTX 부산역</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 여행의 관문 허브</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+
+                            <!-- 장소 아이템 3 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-3.png" alt="용두산공원, 부산타워">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>용두산 공원, 부산타워</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산을 내려다보는 도심 전망지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 4 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-4.png" alt="영도대교">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>영도대교</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">도개교가 들려주는 항구의 역사</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 5 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-5.png" alt="흰여울 문화마을">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>흰여울 문화마을</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">절벽 위 영화 같은 바다 마을</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 6 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-1.png" alt="송정해수욕장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>송정해수욕장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">서퍼들이 사랑하는 해변</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 7 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-2.png" alt="해동용궁사 문화마을">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>해동용궁사</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">절벽 위 아름다운 사찰</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                        </div><!-- .swiper-wrapper -->
+                    </div><!-- #tab1 -->
+
+
+                    <!-- 탭 2의 상세 내용 -->
+                    <div id="tab2" class="swiper CourseSwiper" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="swiper-wrapper">
+
+                            <!-- 장소 아이템 1 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-1.png" alt="송정해수욕장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>송정해수욕장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">서퍼들이 사랑하는 감성 해변</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 2 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-2.png" alt="용궁사 · 수산과학관">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>용궁사 · 수산과학관</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">바다 절경 품은 해안 사찰</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 3 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-3.png" alt="아난티코브(힐튼부산)">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>아난티코브(힐튼부산)</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">절벽 위 힐링 럭셔리 휴식지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 4 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-4.png" alt="아난티코브(힐튼부산)">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>죽도(연화리)</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">해녀 향기 살아있는 섬 마을</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 5 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-5.png" alt="대변항 · 멸치테마광장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>대변항 · 멸치테마광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">멸치로 유명한 어항 풍경지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 6 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-1.png" alt="자갈치">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>자갈치 BIFF 광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 맛·문화의 중심 거리</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 7 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-2.png" alt="부산역">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>KTX 부산역</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 여행의 관문 허브</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+
+                            <!-- 장소 아이템 1 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-1.png" alt="송정해수욕장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>송정해수욕장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">서퍼들이 사랑하는 감성 해변</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 2 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-2.png" alt="용궁사 · 수산과학관">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>용궁사 · 수산과학관</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">바다 절경 품은 해안 사찰</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 3 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-3.png" alt="아난티코브(힐튼부산)">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>아난티코브(힐튼부산)</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">절벽 위 힐링 럭셔리 휴식지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 4 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-4.png" alt="아난티코브(힐튼부산)">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>죽도(연화리)</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">해녀 향기 살아있는 섬 마을</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 5 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-5.png" alt="대변항 · 멸치테마광장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>대변항 · 멸치테마광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">멸치로 유명한 어항 풍경지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 6 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-1.png" alt="자갈치">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>자갈치 BIFF 광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 맛·문화의 중심 거리</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                            <!-- 장소 아이템 7 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course1-2.png" alt="부산역">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>KTX 부산역</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 여행의 관문 허브</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item-->
+
+                        </div><!-- .swiper_wrapper -->
+                    </div><!-- #tab2 -->
+
+                    <!-- 탭 3의 상세 내용 -->
+                    <div id="tab3" class="swiper CourseSwiper" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="swiper-wrapper">
+                            <!-- 장소 아이템 1 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-1.png" alt="마린시티">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>마린시티</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">초고층이 만든 해안 스카이라인</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 2 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-2.png" alt="동백섬">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>동백섬</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">숲과 바다가 만나는 누리길 명소</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 3 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-3.png" alt="해운대 해수욕장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>해운대 해수욕장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 바다의 정석, 해운대해수욕장</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 4 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-4.png" alt="센텀시티">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>센텀시티</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">쇼핑·문화가 집약한 미래 도시</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 5 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-5.png" alt="영화의 전당">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>영화의 전당</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">영화도시의 상징 랜드마크</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper .course-contents__item -->
+                            <!-- 장소 아이템 6 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-4.png" alt="아난티코브(힐튼부산)">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>죽도(연화리)</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">해녀 향기 살아있는 섬 마을</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 7 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-5.png" alt="대변항 · 멸치테마광장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>대변항 · 멸치테마광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">멸치로 유명한 어항 풍경지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 1 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-1.png" alt="마린시티">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>마린시티</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">초고층이 만든 해안 스카이라인</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 2 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-2.png" alt="동백섬">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>동백섬</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">숲과 바다가 만나는 누리길 명소</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 3 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-3.png" alt="해운대 해수욕장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>해운대 해수욕장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">부산 바다의 정석, 해운대해수욕장</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 4 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-4.png" alt="센텀시티">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>센텀시티</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">쇼핑·문화가 집약한 미래 도시</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 5 -->
+                            <div class="swiper-slide course-contents__item">
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course3-5.png" alt="영화의 전당">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>영화의 전당</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">영화도시의 상징 랜드마크</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper .course-contents__item -->
+                            <!-- 장소 아이템 6 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-4.png" alt="아난티코브(힐튼부산)">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>죽도(연화리)</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">해녀 향기 살아있는 섬 마을</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                            <!-- 장소 아이템 7 -->
+                            <div class="swiper-slide course-contents__item">
+
+                                <div class="course-contents__thumb-wrapper">
+                                    <div class="course-contents__thumb">
+                                        <img src="images/04_course2-5.png" alt="대변항 · 멸치테마광장">
+                                    </div><!-- .course-contents__thumb -->
+                                    <div class="course-contents__info">
+                                        <ul>
+                                            <li><i class="fa-solid fa-person-walking"></i>
+                                                <p>30분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-bus-simple"></i>
+                                                <p>7분</p>
+                                            </li>
+                                            <li><i class="fa-solid fa-arrows-left-right"></i>
+                                                <p>1km</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .course-contents__info -->
+                                </div><!-- .course-contents__thumb-wrapper -->
+                                <div class="course-contents__text">
+                                    <div class="course-contents__title">
+                                        <p>대변항 · 멸치테마광장</p>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <p class="course-contents__summary">멸치로 유명한 어항 풍경지</p>
+                                </div><!-- course-contents__text -->
+                            </div><!-- .swiper-slide .course-contents__item -->
+
+                        </div><!-- .swiper_wrapper -->
+                    </div><!-- #tab3 -->
+                </div><!-- .course-contents -->
+            </section><!-- #course -->
+
+            <!-- map S -->
+            <section id="map">
+                <div class="map-contents">
+                    <div class="map-contents__img-wrap" data-aos="zoom-in-right" data-aos-duration="500">
+                        <!-- 지도 이미지 배경-->
+                        <ul class="map__place-img">
+                            <!-- 장소 -->
+                            <li class="place place01" data-id="place01">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=365&lang_cd=ko">
+                                    <span>감천문화마을</span>
+                                    <img src="images/05_map_place01.svg" alt="place01">
+                                </a>
+                            </li>
+                            <li class="place place02" data-id="place02">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=377&lang_cd=ko">
+                                    <span>광안리해수욕장</span>
+                                    <img src="images/05_map_place02.svg" alt="place02"></a>
+                            </li>
+                            <li class="place place03" data-id="place03">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=280&lang_cd=ko">
+                                    <span>송정해수욕장</span>
+                                    <img src="images/05_map_place03.svg" alt="place03">
+                                </a>
+                            </li>
+                            <li class="place place04" data-id="place04">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2121&lang_cd=ko">
+                                    <span>APEC하우스</span>
+                                    <img src="images/05_map_place04.svg" alt="place04">
+
+                                </a>
+                            </li>
+                            <li class="place place05" data-id="place05">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2274&lang_cd=ko">
+                                    <span>동백섬</span>
+                                    <img src="images/05_map_place05.svg" alt="place05">
+
+                                </a>
+                            </li>
+                            <li class="place place06" data-id="place06">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=373&lang_cd=ko">
+                                    <span>해운대해수욕장</span>
+                                    <img src="images/05_map_place06.svg" alt="place06">
+                                </a>
+                            </li>
+                            <li class="place place07" data-id="place07">
+                                <a href="https://www.bluelinepark.com/beachTramCourse.do">
+                                    <span>블루라인파크</span>
+                                    <img src="images/05_map_place07.svg" alt="place07">
+                                </a>
+                            </li>
+                            <li class="place place08" data-id="place08">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2314&lang_cd=ko">
+                                    <span>범어사</span>
+                                    <img src="images/05_map_place08.svg" alt="place08">
+                                </a>
+                            </li>
+                            <li class="place place09" data-id="place09">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=420&lang_cd=ko">
+                                    <span>벡스코</span>
+                                    <img src="images/05_map_place09.svg" alt="place09">
+                                </a>
+                            </li>
+                            <li class="place place10" data-id="place10">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1671&lang_cd=ko">
+                                    <span>부산현대미술관</span>
+                                    <img src="images/05_map_place10.svg" alt="place10">
+                                </a>
+                            </li>
+                            <li class="place place11" data-id="place11">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=548&lang_cd=ko">
+                                    <span>센텀시티</span>
+                                    <img src="images/05_map_place11.svg" alt="place11">
+                                </a>
+                            </li>
+                            <li class="place place12" data-id="place12">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1422&lang_cd=ko">
+                                    <span>송도해상케이블카</span>
+                                    <img src="images/05_map_place12.svg" alt="place12">
+                                </a>
+                            </li>
+                            <li class="place place13" data-id="place13">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=369&lang_cd=ko">
+                                    <span>영도대교</span>
+                                    <img src="images/05_map_place13.svg" alt="place13">
+                                </a>
+                            </li>
+                            <li class="place place14" data-id="place14">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=2558&lang_cd=ko">
+                                    <span>용두산공원</span>
+                                    <img src="images/05_map_place14.svg" alt="place14">
+                                </a>
+                            </li>
+                            <li class="place place15" data-id="place15">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=258&lang_cd=ko">
+                                    <span>태종대</span>
+                                    <img src="images/05_map_place15.svg" alt="place01">
+                                </a>
+                            </li>
+                            <li class="place place16" data-id="place16">
+                                <a
+                                    href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko">
+                                    <span>해동용궁사</span>
+                                    <img src="images/05_map_place16.svg" alt="place16">
+                                </a>
+                            </li>
+                        </ul><!-- map__place-img -->
+
+                        <ul class="map-deco">
+                            <!-- 배경 구름 -->
+                            <li class="cloud cloud01">
+                                <img src="images/05_map_cloud_01.svg" alt="cloud01">
+                            </li>
+                            <li class="cloud cloud02">
+                                <img src="images/05_map_cloud_02.svg" alt="cloud02">
+                            </li>
+                            <li class="cloud cloud03">
+                                <img src="images/05_map_cloud_03.svg" alt="cloud03">
+                            </li>
+
+                            <!-- 배경 파도 -->
+                            <li class="wave_01">
+                                <img src="images/05_map_wave_01.svg" alt="wave01">
+                            </li>
+                            <li class="wave_02">
+                                <img src="images/05_map_wave_02.svg" alt="wave01">
+                            </li>
+                            <li class="wave_03">
+                                <img src="images/05_map_wave_03.svg" alt="wave01">
+                            </li>
+                            <li class="wave_04">
+                                <img src="images/05_map_wave_04.svg" alt="wave01">
+                            </li>
+
+                            <!-- 배경 배 -->
+                            <li class="ship ship01">
+                                <img src="images/05_map_ship_01.svg" alt="ship01">
+                            </li>
+                            <li class="ship ship02">
+                                <img src="images/05_map_ship_02.svg" alt="ship02">
+                            </li>
+                            <li class="ship ship03">
+                                <img src="images/05_map_ship_03.svg" alt="ship03">
+                            </li>
+                        </ul>
+                    </div><!-- .map-contents__image -->
+
+                    <!-- 가장 인기 있는 장소 데모 -->
+                    <div class="map-contents__card-wrap">
+                        <h2 class="section__title" data-aos="fade-left" data-aos-duration="600">가장 인기 있는 장소에요!</h2>
+                        <p class="map-contents__card-wrap__sub" data-aos="fade-left" data-aos-duration="600">방문객이 가장 많은
+                            정류장 TOP5</p>
+                        <div class="map-contents__card-box" data-aos="fade-left" data-aos-duration="800">
+                            <!-- Swiper -->
+                            <div class="swiper map-contents__card-swiper">
+                                <div class="swiper-wrapper map-swiper-wrapper">
+
+                                    <!-- 카드1 -->
+                                    <div class="swiper-slide">
+                                        <div class="map-contents__card">
+                                            <img src="images/05_map_photo1.png" alt="감천문화마을">
+                                            <div class="map-contents__card__text">
+                                                <span>한국의 마추픽추</span>
+                                                <h3>감천 문화마을</h3>
+                                                <p>산비탈에 옹기종기 모여 있는
+                                                    <br>독특한 예술 마을
+                                                </p>
+                                                <h4 class="bus-text">가장 가까운 정류장</h4>
+                                                <i class="fa-solid fa-bus map-bus-icon"></i>
+                                                <p class="bus-stop">감천문화마을(감천사거리)</p>
+                                            </div><!--.map-contents__card__text -->
+                                        </div><!-- .map-contents__card -->
+                                        <a href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=365&lang_cd=ko"
+                                            class="map-contents__card__link" role="button">자세히 보기</a>
+                                    </div><!-- .swiper_slide -->
+
+                                    <!-- 카드2 -->
+                                    <div class="swiper-slide map-swiper-slide">
+                                        <div class="map-contents__card">
+                                            <img src="images/05_map_photo2.png" alt="광안리 해수욕장">
+                                            <div class="map-contents__card__text">
+                                                <span>부산 야경의 심장</span>
+                                                <h3>광안리 해수욕장</h3>
+                                                <p>광안대교의 화려한 조명 아래서
+                                                    <br>
+                                                    즐기는 바닷가 카페와 펍
+                                                </p>
+                                                <h4 class="bus-text">가장 가까운 정류장</h4>
+                                                <i class="fa-solid fa-bus map-bus-icon"></i>
+                                                <p class="bus-stop">광안리해수욕장</p>
+                                            </div><!--.map-contents__card__text -->
+                                        </div><!-- .map-contents__card -->
+                                        <a href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=377&lang_cd=ko"
+                                            class="map-contents__card__link" role="button">자세히 보기</a>
+                                    </div><!-- .swiper_slide -->
+
+                                    <!-- 카드3 -->
+                                    <div class="swiper-slide">
+                                        <div class="map-contents__card">
+                                            <img src="images/05_map_photo3.png" alt="오륙도 스카이워크">
+                                            <div class="map-contents__card__text">
+                                                <span>바다 위를 걷는 짜릿함</span>
+                                                <h3>오륙도 스카이워크</h3>
+                                                <p>
+                                                    투명한 바닥 아래로 펼쳐지는
+                                                    <br>
+                                                    아찔한 해안 절경 명소
+                                                </p>
+                                                <h4 class="bus-text">가장 가까운 정류장</h4>
+                                                <i class="fa-solid fa-bus map-bus-icon"></i>
+                                                <p class="bus-stop">오륙도스카이워크</p>
+                                            </div><!--.map-contents__card__text -->
+                                        </div><!-- .map-contents__card -->
+                                        <a href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=278&lang_cd=ko"
+                                            class="map-contents__card__link" role="button">자세히 보기</a>
+                                    </div><!-- .swiper_slide -->
+
+                                    <!-- 카드4 -->
+                                    <div class="swiper-slide">
+                                        <div class="map-contents__card">
+                                            <img src="images/05_map_photo4.png" alt="다대포해수욕장">
+                                            <div class="map-contents__card__text">
+                                                <span>낙조와 모래톱의 예술 </span>
+                                                <h3>다대포해수욕장</h3>
+                                                <p>
+                                                    서부산의 대표적인 일몰 명소이자
+                                                    <br>
+                                                    넓은 모래톱이 장관인 곳
+                                                </p>
+                                                <h4 class="bus-text">가장 가까운 정류장</h4>
+                                                <i class="fa-solid fa-bus map-bus-icon"></i>
+                                                <p class="bus-stop">다대포해수욕장(몰운대)</p>
+                                            </div><!--.map-contents__card__text -->
+                                        </div><!-- .map-contents__card -->
+                                        <a href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=366&lang_cd=ko"
+                                            class="map-contents__card__link" role="button">자세히 보기</a>
+                                    </div><!-- .swiper_slide -->
+
+                                    <!-- 카드5 -->
+                                    <div class="swiper-slide">
+                                        <div class="map-contents__card">
+                                            <img src="images/05_map_photo5.png" alt="송도해상케이블카">
+                                            <div class="map-contents__card__text">
+                                                <span>바다를 건너는 낭만</span>
+                                                <h3>송도해상케이블카</h3>
+                                                <p>국내 최초의 해수욕장 송도,
+                                                    <br> 구름산책로와 함께 즐기다
+                                                </p>
+                                                <h4 class="bus-text">가장 가까운 정류장</h4>
+                                                <i class="fa-solid fa-bus map-bus-icon"></i>
+                                                <p class="bus-stop">송도해수욕장(구름산책로)</p>
+                                            </div><!--.map-contents__card__text -->
+                                        </div><!-- .map-contents__card -->
+                                        <a href="https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1422&lang_cd=ko"
+                                            class="map-contents__card__link" role="button">자세히 보기</a>
+                                    </div><!-- .swiper_slide -->
+                                </div><!-- .swiper-wrapper .map-swiper-wrapper -->
+                            </div><!-- .swiper .map-contents__card-swiper-->
+
+                            <!-- 맵 스와이퍼 화살표 -->
+                            <div class="map-contents__swiper-button">
+                                <div class="map-swiper-button-prev">
+                                    <i class="fa-solid fa-chevron-left map-chevron-left"></i>
+                                </div>
+                                <div class="map-swiper-button-next">
+                                    <i class="fa-solid fa-chevron-right map-chevron-right"></i>
+                                </div>
+                            </div><!-- .map-contents__swiper-button -->
+
+                        </div><!-- .map-contents__card-box -->
+                    </div><!-- .map-contents__card-wrap -->
+                </div><!-- .map-contents -->
+            </section>
+            <!-- map E -->
+
+            <!-- pick S -->
+            <section id="pick">
+                <div class="title-area" data-aos="fade-right" data-aos-duration="500">
+                    <h2 class="section__title">부비투어’s Pick</h2>
+                    <img src="images/06_pick_icon_heart.svg" alt="하트모양 아이콘">
+                    <p class="section__subtitle">
+                        부비투어 시민 가이드 100명이 선정한 맛집, 숙소, 체험
+                    </p>
+                </div><!-- .pick__text-area -->
+
+                <!-- 탭구조 시작 -->
+                <div id="pick-tabs">
+                    <div class="pick-tabs-button" data-aos="fade-right" data-aos-duration="500">
+                        <ul class="pick-tab-list">
+                            <li class="on">
+                                <a href="javascript:void(0);" data-tab-target="#pick-tab1" class="pick-tabs__button">
+                                    <div>
+                                        <p>맛집</p>
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" data-tab-target="#pick-tab2" class="pick-tabs__button">
+                                    <div>
+                                        <p>숙소</p>
+                                        <i class="fa-solid fa-bed"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" data-tab-target="#pick-tab3" class="pick-tabs__button">
+                                    <div>
+                                        <p>체험</p>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul><!-- .pick-tab-list -->
+
+                        <!-- 페이지 번호 -->
+                        <div class="pick__page-number">
+                            <ul>
+                                <li>
+                                    <img src="images/06_pick_arrow_prev.svg" alt="이전보기버튼">
+                                </li>
+                                <li class="on">
+                                    <p>1</p>
+                                </li>
+                                <li>
+                                    <p>2</p>
+                                </li>
+                                <li>
+                                    <p>3</p>
+                                </li>
+                                <li>
+                                    <p>4</p>
+                                </li>
+                                <li>
+                                    <p>5</p>
+                                </li>
+                                <li>
+                                    <img src="images/06_pick_arrow_next.svg" alt="다음보기버튼">
+                                </li>
+                            </ul>
+                        </div><!-- pick_-page-number -->
+                    </div><!-- .pick-tabs-button -->
+
+                    <div class="pick-tabs__contents" data-aos="fade-up" data-aos-duration="600">
+                        <!-- 맛집 탭 세부내용 -->
+                        <div id="pick-tab1" class="pick__contents on">
+                            <div class="pick__contents-box">
+                                <div class="box1">
+                                    <!-- 윗 부분 박스 -->
+                                    <div class="pick__text-wrap">
+                                        <!-- 장소명 -->
+                                        <div class="place-title">
+                                            <h3 class="place-name">오붓한</h3>
+                                            <div class="place-category">
+                                                <img src="images/06_pick_icon_food.svg" alt="음식종류">
+                                                <p>한식/양식</p>
+                                            </div><!-- .place-category -->
+                                        </div>
+                                        <!-- 장소 설명 -->
+                                        <p class="place-text">
+                                            중앙동 40계단 거리에 자리한
+                                            <br>
+                                            정갈하고 깔끔한 예약제 밥집
+                                        </p><!-- .place-text -->
+
+                                        <!-- 아이콘 + 장소 정보 -->
+                                        <ul class="place-info">
+                                            <li>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                부산 중구 동광길 42 1층
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-phone"></i>
+                                                0507-1309-3531
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-clock"></i>
+                                                11:00 ~ 19:00 / 월화 휴일
+                                            </li>
+                                        </ul><!-- .place-info -->
+
+                                        <!-- 별점 -->
+                                        <div class="place-grade">
+                                            <div class="grade">
+                                                <p>맛</p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>분위기</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>접근성</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <!-- 접근성 -->
+                                            <div class="access">
+                                                <ul>
+                                                    <!-- 휠체어 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-baby-carriage"></i>
+                                                    </li>
+                                                    <!-- 유모차 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-wheelchair"></i>
+                                                    </li>
+                                                    <!-- 비건 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-leaf"></i>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- .access -->
+                                        </div><!-- place-grade -->
+                                    </div><!-- pick__text-wrap -->
+
+                                    <div class="pick__img-wrap">
+                                        <img src="images/06_pick_food1-1.png" alt="food1-1">
+                                    </div>
+                                </div><!-- .box1 -->
+
+                                <!-- 작은 사진 -->
+                                <div class="box2">
+                                    <ul>
+                                        <li>
+                                            <img src="images/06_pick_food1-2.png" alt="food1-2">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_food1-3.png" alt="food1-3">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_food1-4.png" alt="food1-4">
+                                        </li>
+                                    </ul>
+                                </div><!-- .box2 -->
+                            </div><!-- .pick__contents-box -->
+
+                            <div class="pick__contents-box">
+                                <div class="box1">
+                                    <!-- 윗 부분 박스 -->
+                                    <div class="pick__text-wrap">
+                                        <!-- 장소명 -->
+                                        <div class="place-title">
+                                            <h3 class="place-name">러브얼스</h3>
+                                            <div class="place-category">
+                                                <img src="images/06_pick_icon_food.svg" alt="음식종류">
+                                                <p>퓨전요리</p>
+                                            </div>
+                                        </div>
+                                        <!-- 장소 설명 -->
+                                        <p class="place-text">
+                                            합리적 가격에 훌륭한 음식,
+                                            <br>
+                                            2024 미쉐린 가이드 선정 비건식당
+                                        </p><!-- .place-text -->
+
+                                        <!-- 아이콘 + 장소 정보 -->
+                                        <ul class="place-info">
+                                            <li>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                수영구 광안로 49번길 32-1
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-phone"></i>
+                                                인스타그램 DM @love_urth
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-clock"></i>
+                                                11:00 ~ 19:00 / 수목금 휴일
+                                            </li>
+                                        </ul><!-- .place-info -->
+
+                                        <!-- 별점 -->
+                                        <div class="place-grade">
+                                            <div class="grade">
+                                                <p>맛</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>분위기</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>접근성</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                            <!-- 접근성 -->
+                                            <div class="access">
+                                                <ul>
+                                                    <!-- 휠체어 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-baby-carriage"></i>
+                                                    </li>
+                                                    <!-- 유모차 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-wheelchair"></i>
+                                                    </li>
+                                                    <!-- 비건 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-leaf"></i>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- .access -->
+                                        </div><!-- place-grade -->
+                                    </div><!-- pick__text-wrap -->
+
+                                    <div class="pick__img-wrap">
+                                        <img src="images/06_pick_food2-1.png" alt="food1-1">
+                                    </div>
+                                </div><!-- .box1 -->
+
+                                <!-- 작은 사진 -->
+                                <div class="box2">
+                                    <ul>
+                                        <li>
+                                            <img src="images/06_pick_food2-2.png" alt="food2-2">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_food2-3.png" alt="food2-3">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_food2-4.png" alt="food2-4">
+                                        </li>
+                                    </ul>
+                                </div><!-- .box2 -->
+                            </div><!-- .pick__contents-box -->
+                        </div><!--#pick-tab1 .pick__contents -->
+
+                        <!-- 숙소탭 세부내용 -->
+                        <div id="pick-tab2" class="pick__contents">
+                            <div class="pick__contents-box">
+                                <div class="box1">
+                                    <!-- 윗 부분 박스 -->
+                                    <div class="pick__text-wrap">
+                                        <!-- 장소명 -->
+                                        <div class="place-title">
+                                            <h3 class="place-name">굿올데이즈</h3>
+                                            <div class="place-category">
+                                                <img src="images/06_pick_icon_hotel.svg" alt="숙소유형">
+                                                <p>3급 호텔</p>
+                                            </div><!-- .place-category -->
+                                        </div>
+                                        <!-- 장소 설명 -->
+                                        <p class="place-text">
+                                            감성적인 카페와 굿즈샵이 있는
+                                            <br>
+                                            여행을 기록하는 아날로그 감성 호텔
+                                        </p><!-- .place-text -->
+
+                                        <!-- 아이콘 + 장소 정보 -->
+                                        <ul class="place-info">
+                                            <li>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                부산 중구 중앙대로41번길 5
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-phone"></i>
+                                                0507-1320-3278
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-square-parking"></i>
+                                                맞은편 건물 안단테 오피스텔 주차장
+                                            </li>
+                                        </ul><!-- .place-info -->
+
+                                        <!-- 별점 -->
+                                        <div class="place-grade">
+                                            <div class="grade">
+                                                <p>분위기</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>접근성</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                            <!-- 접근성 -->
+                                            <div class="access">
+                                                <ul>
+                                                    <!-- 휠체어 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-baby-carriage"></i>
+                                                    </li>
+                                                    <!-- 유모차 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-wheelchair"></i>
+                                                    </li>
+                                                    <!-- 엘베 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-elevator"></i>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- .access -->
+                                        </div><!-- place-grade -->
+                                    </div><!-- pick__text-wrap -->
+
+                                    <div class="pick__img-wrap">
+                                        <img src="images/06_pick_hotel1-1.png" alt="hotel1-1">
+                                    </div>
+                                </div><!-- .box1 -->
+
+                                <!-- 작은 사진 -->
+                                <div class="box2">
+                                    <ul>
+                                        <li>
+                                            <img src="images/06_pick_hotel1-2.png" alt="hotel1-2">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_hotel1-3.png" alt="hotel1-3">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_hotel1-4.png" alt="hotel1-4">
+                                        </li>
+                                    </ul>
+                                </div><!-- .box2 -->
+                            </div><!-- .pick__contents-box -->
+
+                            <div class="pick__contents-box">
+                                <div class="box1">
+                                    <!-- 윗 부분 박스 -->
+                                    <div class="pick__text-wrap">
+                                        <!-- 장소명 -->
+                                        <div class="place-title">
+                                            <h3 class="place-name">로스트 펭귄</h3>
+                                            <div class="place-category">
+                                                <img src="images/06_pick_icon_house.svg" alt="숙소유형">
+                                                <p>게스트하우스</p>
+                                            </div><!-- .place-category -->
+                                        </div>
+                                        <!-- 장소 설명 -->
+                                        <p class="place-text">
+                                            건축가가 설계한 복층형 건물로
+                                            <br>
+                                            루프탑의 매력을 느낄 수 있는 곳
+                                        </p><!-- .place-text -->
+
+                                        <!-- 아이콘 + 장소 정보 -->
+                                        <ul class="place-info">
+                                            <li>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                부산광역시 수영구 광안로21번길 9
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-phone"></i>
+                                                010-6335-9334
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-square-parking"></i>
+                                                건물 앞 도로 주차 가능
+                                            </li>
+                                        </ul><!-- .place-info -->
+
+                                        <!-- 별점 -->
+                                        <div class="place-grade">
+                                            <div class="grade">
+                                                <p>분위기</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>접근성</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                            <!-- 접근성 -->
+                                            <div class="access">
+                                                <ul>
+                                                    <!-- 휠체어 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-baby-carriage"></i>
+                                                    </li>
+                                                    <!-- 유모차 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-wheelchair"></i>
+                                                    </li>
+                                                    <!-- 엘베 -->
+                                                    <li>
+                                                        <i class="fa-solid fa-elevator"></i>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- .access -->
+                                        </div><!-- place-grade -->
+                                    </div><!-- pick__text-wrap -->
+
+                                    <div class="pick__img-wrap">
+                                        <img src="images/06_pick_hotel2-1.png" alt="hotel2-1">
+                                    </div>
+                                </div><!-- .box1 -->
+
+                                <!-- 작은 사진 -->
+                                <div class="box2">
+                                    <ul>
+                                        <li>
+                                            <img src="images/06_pick_hotel2-2.png" alt="hotel2-2">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_hotel2-3.png" alt="hotel2-3">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_hotel2-4.png" alt="hotel2-4">
+                                        </li>
+                                    </ul>
+                                </div><!-- .box2 -->
+                            </div><!-- .pick__contents-box -->
+                        </div><!--#pick-tab2 .pick__contents -->
+
+                        <!-- 체험 탭 세부내용 -->
+                        <div id="pick-tab3" class="pick__contents">
+                            <div class="pick__contents-box">
+                                <div class="box1">
+                                    <!-- 윗 부분 박스 -->
+                                    <div class="pick__text-wrap">
+                                        <!-- 장소명 -->
+                                        <div class="place-title">
+                                            <h3 class="place-name">놀핏</h3>
+                                        </div>
+                                        <!-- 장소 설명 -->
+                                        <p class="place-text">
+                                            ‘노르딕워킹’을 전문적으로 즐길 수
+                                            <br>
+                                            있는 웰니스 프로그램 전문업체
+                                        </p><!-- .place-text -->
+
+                                        <!-- 아이콘 + 장소 정보 -->
+                                        <ul class="place-info">
+                                            <li>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                부산 사하구 장림로93번길 74 장림항
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-phone"></i>
+                                                0507-1385-2620
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-clock"></i>
+                                                월~토 9:00~20:00 (12시~15시 휴게)
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-calendar-check"></i>
+                                                예약 : https://norfit.imweb.me/
+                                            </li>
+                                        </ul><!-- .place-info -->
+
+                                        <!-- 별점 -->
+                                        <div class="place-grade">
+                                            <div class="grade">
+                                                <p>가성비</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>접근성</p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star">
+                                                </i>
+                                            </div>
+                                        </div><!-- place-grade -->
+                                    </div><!-- pick__text-wrap -->
+
+                                    <div class="pick__img-wrap">
+                                        <img src="images/06_pick_activity1-1.png" alt="activity1-1">
+                                    </div>
+                                </div><!-- .box1 -->
+
+                                <!-- 작은 사진 -->
+                                <div class="box2">
+                                    <ul>
+                                        <li>
+                                            <img src="images/06_pick_activity1-2.png" alt="activity1-2">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_activity1-3.png" alt="activity1-3">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_activity1-4.png" alt="factivity1-4">
+                                        </li>
+                                    </ul>
+                                </div><!-- .box2 -->
+                            </div><!-- .pick__contents-box -->
+
+                            <div class="pick__contents-box">
+                                <div class="box1">
+                                    <!-- 윗 부분 박스 -->
+                                    <div class="pick__text-wrap">
+                                        <!-- 장소명 -->
+                                        <div class="place-title">
+                                            <h3 class="place-name">다대포해양레포츠센터</h3>
+                                        </div>
+                                        <!-- 장소 설명 -->
+                                        <p class="place-text">
+                                            카이트 보딩, SUP패들보드, 서핑 등
+                                            <br>
+                                            다양한 스포츠를 즐길 수 있는 곳
+                                        </p><!-- .place-text -->
+
+                                        <!-- 아이콘 + 장소 정보 -->
+                                        <ul class="place-info">
+                                            <li>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                부산 사하구 몰운대 1길 52
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-phone"></i>
+                                                051-207-3700 / 010-9341-1413
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-clock"></i>
+                                                건물 앞매일 9:30~18:00 도로 주차 가능
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-calendar-check"></i>
+                                                예약 : http://busanddp.co.kr/
+                                            </li>
+                                        </ul><!-- .place-info -->
+
+                                        <!-- 별점 -->
+                                        <div class="place-grade">
+                                            <div class="grade">
+                                                <p>가성비</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="grade">
+                                                <p>접근성</p>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                                    class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div><!-- place-grade -->
+                                    </div><!-- pick__text-wrap -->
+
+                                    <div class="pick__img-wrap">
+                                        <img src="images/06_pick_activity2-1.png" alt="activity2-1">
+                                    </div>
+                                </div><!-- .box1 -->
+
+                                <!-- 작은 사진 -->
+                                <div class="box2">
+                                    <ul>
+                                        <li>
+                                            <img src="images/06_pick_activity2-2.png" alt="activity2-2">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_activity2-3.png" alt="activity2-3">
+                                        </li>
+                                        <li>
+                                            <img src="images/06_pick_activity2-4.png" alt="factivity2-4">
+                                        </li>
+                                    </ul>
+                                </div><!-- .box2 -->
+                            </div><!-- .pick__contents-box -->
+                        </div><!--#pick-tab3 .pick__contents -->
+                    </div><!-- .pick-tabs__contents -->
+                </div><!-- #pick-tab -->
+            </section>
+            <!-- pick E -->
+
+            <!-- md S -->
+            <section id="md" data-aos="fade-up" data-aos-duration="500">
+                <!-- 물결 배경 넣기 -->
+                <div class="md__contents">
+                    <!-- 1050px 가운데 정렬 -->
+                    <div class="title-area md__title-area">
+                        <!-- 콘텐츠 제목 영역 -->
+                        <h2 class="section__title">부비투어 MD 상품 & 입점처</h2>
+                        <img src="images/07_md_icon_pop.svg" alt="폭죽 아이콘">
+                        <p class="section__subtitle">
+                            부산 여행을 더욱 특별하게 만들어줄 아이템
+                        </p>
+                    </div><!-- .title-area -->
+
+                    <div class="md__goods">
+                        <!-- 굿즈 영역 -->
+                        <div class="md-text">
+                            <img src="images/07_md_icon_item.svg" alt="쇼핑백 아이콘">
+                            <h3>MD 상품 리스트</h3>
+                        </div><!-- md-text -->
+
+                        <div class="md__items">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/07_md_cap.png" alt="부비투어 md 모자">
+                                        <div class="md__items-text">
+                                            <p class="item-desc">버스 기사님이 쓰던 그 모자</p>
+                                            <p class="item-name">
+                                                부비투어 캡모자
+                                            </p>
+                                            <p class="item-price">
+                                                <span class="item-percent">
+                                                    30%
+                                                </span>
+                                                19,000원
+                                            </p>
+                                            <div class="item-tag">
+                                                <p>UV차단</p>
+                                                <p>유기농코튼</p>
+                                            </div>
+                                        </div><!-- .md__items-text -->
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="images/07_md_shose.png" alt="부비투어 md 신발">
+                                        <div class="md__items-text">
+                                            <p class="item-desc">퍼스널컬러는 모래</p>
+                                            <p class="item-name">
+                                                부비투어 슬리퍼
+                                            </p>
+                                            <p class="item-price">
+                                                <span class="item-percent">
+                                                    30%
+                                                </span>
+                                                19,000원
+                                            </p>
+                                            <div class="item-tag">
+                                                <p>엠보싱</p>
+                                                <p>BPA FREE</p>
+                                            </div>
+                                        </div><!-- .md__items-text -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/07_md_bag.png" alt="부비투어 md 가방">
+                                        <div class="md__items-text">
+                                            <p class="item-desc">친환경 에코백</p>
+                                            <p class="item-name">
+                                                부비투어 에코백
+                                            </p>
+                                            <p class="item-price">
+                                                <span class="item-percent">
+                                                    30%
+                                                </span>
+                                                10,900원
+                                            </p>
+                                            <div class="item-tag">
+                                                <p>실크스크린</p>
+                                                <p>유기농코튼</p>
+                                            </div>
+                                        </div><!-- .md__items-text -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/07_md_camera.png" alt="부비투어 md 토이카메라">
+                                        <div class="md__items-text">
+                                            <p class="item-desc">낭만 순도 100%</p>
+                                            <p class="item-name">
+                                                부비투어 토이카메라
+                                            </p>
+                                            <p class="item-price">
+                                                <span class="item-percent">
+                                                    30%
+                                                </span>
+                                                29,000원
+                                            </p>
+                                            <div class="item-tag">
+                                                <p>UV차단</p>
+                                                <p>유기농코튼</p>
+                                            </div>
+                                        </div><!-- .md__items-text -->
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="images/07_md_pin.png" alt="부비투어 md 핀뱃지">
+                                        <div class="md__items-text">
+                                            <p class="item-desc">바람을 달고 다니는 법</p>
+                                            <p class="item-name">
+                                                부비투어 핀버튼 뱃지
+                                            </p>
+                                            <p class="item-price">
+                                                <span class="item-percent">
+                                                    30%
+                                                </span>
+                                                1,500원
+                                            </p>
+                                            <div class="item-tag">
+                                                <p>기념품정석</p>
+                                                <p>무독성니켈</p>
+                                            </div>
+                                        </div><!-- .md__items-text -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- .md__items -->
+                    </div><!-- .md__goods -->
+
+                    <div class="md__shop">
+                        <!-- 입점처 영역 -->
+                        <div class="md-text">
+                            <img src="images/07_md_icon_location.svg" alt="위치 아이콘">
+                            <h3>입점처 위치 안내</h3>
+                        </div><!-- md-text -->
+                        <ul class="md__shop-list">
+                            <li><!-- 1 -->
+                                <div class="shop__img-wrap">
+                                    <img src="images/07_md_store01.png" alt="디자인 스퀘어">
+                                    <div class="search-box">
+                                        <a
+                                            href="https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=1185&lang_cd=ko&pagingParms=4ca15f3a76a21f554a6e515f5344f50c4f734814d27260977c0eb574b1e0019a33f5a8e2dd587a9efb82cc91cf112987488312a3bc08c3054da8c190c930f6592e7894a7ed3cf42438e40b16135015920aa608ee54ad79feb8b43e0becf2aedf306446a26175f37928b2e64d297ab48f8acfae3743ce2794ef15d99eb793341329c53a76d24a81ef72a11ca917970aac34400ec0365d93e364d7a859d58178e212648c28901350cb20330ec09b4e8c7ee5e2b8287a2a6536a889e832bf7d31f811c87cdb08416c849549c03d819d8091f8865d8cbe9170e711a8d44eef418bbbef6953db2681dc67b4702b9d3e0fb9d787d01c209bd09b6fd75537b39410af399cbcba9ee6702cb39537bf709fc893f16242d2505ff463a634757c4ad1fb5316c17e3c6c881b1202936a9591f574a9b458fe7ada378c8e24a939d38009efceb2f1d2f3d9fb0a84335999d70d74a175a02229fcd269f25ecae09cba47d7fa5b4ca79471889a1020e6226a199377b97ead69d777bcce27c101be7225c1ffeb0036367494277c22e6ec9cff0114e7cadf3a2d867367262d1b5f6a717ace24b4cae0734d3410c3de7cbbe8e8e2de4a08c9f7f2d71419b760deedc85bfd092d20cf83296e62049d974032c50fee7f8aa0e20719104acb04653baae653f6241ef307d9e996ca01c0f8bd824354a4dca0b19c946587c06d230f6482256a9de72a9fa24ba129cf0fb738ea3fb9bc9747e7df4474be7818bb7eff756374cc00db8a2d8b44f509535c41fad3fd4288800883cc7cbbbe7818bb7eff7563a936e57548c825077929f3c756fd8041ba732cd0daec82e68e859c05897252c8aa747148d31e45a90f5448acec23da847546871a3c07abe6850ec01726f2489af2d4f1a47503d65ea503fda4abaf60ed0eb378581e31c4e3e058ae94d1bf012f2da798f6e895cd3e3d9c91e87cfa3f6d3763afb5fdd47c1311bde3c3c21e9dee02285b93c32c79f5927147ff3182019c3e04478993fce7c5026e1da8dd6198d26f2925566617460c3fc8b7cdb757a415fe7ce97b54f75919fdff5d4c4a3e7efa45398350aa4f1eb1d176a53d66216b91dc1cd83765e7be33"><i
+                                                class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                    </div>
+                                </div><!-- .shop__img-wrap -->
+                                <div class="shop__text-wrap">
+                                    <p><strong>디자인 스퀘어</strong> | 부산진구 서면로 39</p>
+                                </div><!-- shop__text-wrap -->
+                            </li>
+                            <li><!-- 2 -->
+                                <div class="shop__img-wrap">
+                                    <img src="images/07_md_store02.png" alt="동백상회">
+                                    <div class="search-box"><a
+                                            href="https://www.visitbusan.net/index.do?menuCd=DOM_000000201003001000&uc_seq=1666&lang_cd=ko&pagingParms=4ca15f3a76a21f554a6e515f5344f50c4f734814d27260977c0eb574b1e0019a33f5a8e2dd587a9efb82cc91cf112987488312a3bc08c3054da8c190c930f6592e7894a7ed3cf424377d2deac364b6a50aa608ee54ad79feb8b43e0becf2aedf306446a26175f37928b2e64d297ab48f8acfae3743ce2794ef15d99eb793341329c53a76d24a81ef72a11ca917970aac34400ec0365d93e364d7a859d58178e212648c28901350cb20330ec09b4e8c7ee5e2b8287a2a6536a889e832bf7d31f811c87cdb08416c849549c03d819d80910260c2b78673663eac8b626a1b97303c7b760b3ab7fed91b4b058708490da96aefe24999cfdc85bb85247989a7b565c188b966678b37848e0d88865602a9ecd47a7ddf1406d80269895b9386fc9d120b54685de106a979027a6fb5c7bf90a1c8bf926b7a8e82fc894b6ec33d0e2cede1f9b0a88b6fca32c1431231fd2a39cac331bb432934a92cf6e6aad5dacce9f91679e0f167d0d79c3b59fcceeb7ed9a0cef2faaff2d3b87264367815c9f53c4f4ecbcb9d36a6045c9af35aa804d431440056418513af49517f4f79a55315722b93a340492d7be20285a25a5b31fe1498aaeb03980cb1031e10ebb655c00d31ed989ab7e55241a36293fc96a4aafe87e4f8d53c47b399853c6798bf07a3ef3af7230dfd5896ce340c4644d5bccb845f32c279d18f1f9cdc65713d7871231c2484183e655d5773e51e693157b6c8457fb14e1f1d7fc555f24c310e1b1fc3bb2ec3b8537e5c3c41ffde2f06bca9b29a52f3a820c30f9ef9ab393b9616c46fbc6ef5fd78ff334e3df20c860299b60aa334a70c5e98c1bf20a59ae3172de4ddb7c6306d39f9c46f407cb63c04889abd5e8e45f36230df071812b24c"><i
+                                                class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                    </div>
+                                </div><!-- .shop__img-wrap -->
+                                <div class="shop__text-wrap">
+                                    <p><strong>동백상회</strong> | KTX 부산역 내부</p>
+                                </div><!-- shop__text-wrap -->
+                            </li>
+                            <li><!-- 3 -->
+                                <div class="shop__img-wrap">
+                                    <img src="images/07_md_store03.png" alt="오랜지 바다">
+                                    <div class="search-box"><a href="https://www.instagram.com/orangebada_pus/"><i
+                                                class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                    </div>
+                                </div><!-- .shop__img-wrap -->
+                                <div class="shop__text-wrap">
+                                    <p><strong>오랜지 바다</strong> | 수영구 광안해변로 245-1</p>
+                                </div><!-- shop__text-wrap -->
+                            </li>
+                        </ul><!-- .md__shop-list -->
+                    </div><!-- .md__shop -->
+                </div><!-- md__contents -->
+            </section>
+            <!-- md E -->
+
+            <!-- review S -->
+            <section id="review">
+                <div class="review__title-area" data-aos="fade-up" data-aos-duration="500">
+                    <p class="review__subtitle section__subtitle">
+                        부비투어 타기 전 체크!
+                    </p>
+                    <h2 class="section__title review__title">
+                        따끈 따끈 여행 후기
+                    </h2><!-- .section__title .review__title -->
+                </div>
+                <div class="review__list-roller" data-aos="fade-up" data-aos-duration="1000">
+                    <ul class="review__list">
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo01.png" alt="review">
+                            </a>
+                        </li>
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo02.png" alt="review">
+                            </a>
+                        </li>
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo03.png" alt="review">
+                            </a>
+                        </li>
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo04.png" alt="review">
+                            </a>
+                        </li>
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo05.png" alt="review">
+                            </a>
+                        </li>
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo06.png" alt="review">
+                            </a>
+                        </li>
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo07.png" alt="review">
+                            </a>
+                        </li>
+                        <li class="review">
+                            <a href="#">
+                                <img src="images/08_review_photo03.png" alt="review">
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- .review__list-roller -->
+            </section>
+            <!-- review E -->
+
+            <!-- ad S -->
+            <section id="ad">
+                <!-- ad Swiper -->
+                <div class="swiper ad-swiper">
+                    <div class="swiper-wrapper ad-swiper-wrapper">
+                        <div class="swiper-slide ad-swiper-slide">
+                            <a href="#"><img src="images/09_ad_banner01.png" alt="banner01"></a>
+                        </div>
+                        <div class="swiper-slide ad-swiper-slide">
+                            <a href="#"><img src="images/09_ad_banner02.png" alt="banner02"></a>
+                        </div>
+                        <div class="swiper-slide ad-swiper-slide">
+                            <a href="#"><img src="images/09_ad_banner03.png" alt="banner03"></a>
+                        </div>
+                    </div><!-- .swiper-wrapper .ad-swiper-wrapper -->
+                </div><!-- .swiper .ad-swiper -->
+            </section>
+            <!-- ad E -->
+
+            <!-- cs S -->
+            <section id="cs">
+                <div class="cs__notice-wrap">
+                    <div class="cs__title-area">
+                        <h2 class="cs__title">공지사항</h2>
+                        <a href="#"><i class="fa-solid fa-plus cs-plus"></i>더보기</a>
+                    </div><!-- cs__title-area -->
+                    <!-- 공지사항 -->
+                    <ul class="cs__notice cs__wrap">
+                        <li>
+                            <div class="notice__item">
+                                <div class="notice-label notice-label--important">
+                                    <p>중요공지</p>
+                                </div>
+                                <div class="notice__text">
+                                    <img src="images/10_notice_icon01.svg" alt="icon1">
+                                    <p class="text"><span>부산역 매표소 위치</span></p>
+                                </div>
+                            </div>
+                            <div class="notice-date">
+                                <p>2025.02.01</p>
+                            </div>
+                        </li>
+                        <li class="notice">
+                            <div class="notice__item">
+                                <div class="notice-label notice-label--important">
+                                    <p>중요공지</p>
+                                </div>
+                                <div class="notice__text">
+                                    <img src="images/10_notice_icon02.svg" alt="icon2">
+                                    <p class="text"><span>배차 간격 및 시간표</span></p>
+                                </div>
+                            </div>
+                            <div class="notice-date">
+                                <p>2025.02.01</p>
+                            </div>
+                        </li>
+                        <li class="notice">
+                            <div class="notice__item">
+                                <div class="notice-label notice-label--important">
+                                    <p>중요공지</p>
+                                </div>
+                                <div class="notice__text">
+                                    <img src="images/10_notice_icon03.svg" alt="icon3">
+                                    <p class="text"><span>취소 수수료 안내</span></p>
+                                </div>
+                            </div>
+                            <div class="notice-date">
+                                <p>2025.02.01</p>
+                            </div>
+                        </li>
+                        <li class="notice">
+                            <div class="notice__item">
+                                <div class="notice-label notice-label--download">
+                                    <p>다운로드</p>
+                                </div>
+                                <div class="notice__text">
+                                    <img src="images/10_notice_icon04.svg" alt="icon4">
+                                    <p class="text"><span>부산여행 가이드북 PDF</span></p>
+                                </div>
+                            </div>
+                            <div class="notice-date">
+                                <p>2025.02.01</p>
+                            </div>
+                        </li>
+                        <li class="notice">
+                            <div class="notice__item">
+                                <div class="notice-label notice-label--announce">
+                                    <p>안내사항</p>
+                                </div>
+                                <div class="notice__text">
+                                    <img src="images/10_notice_icon05.svg" alt="icon5">
+                                    <p class="text"><span>불꽃 축제 기간 야간 개장</span></p>
+                                </div>
+                            </div>
+                            <div class="notice-date">
+                                <p>2025.02.01</p>
+                            </div>
+                        </li>
+                        <li class="notice">
+                            <div class="notice__item">
+                                <div class="notice-label notice-label--announce">
+                                    <p>안내사항</p>
+                                </div>
+                                <div class="notice__text">
+                                    <img src="images/10_notice_icon06.svg" alt="icon6">
+                                    <p class="text"><span>관광 안전 캠페인 공모전</span></p>
+                                </div>
+                            </div>
+                            <div class="notice-date">
+                                <p>2025.02.01</p>
+                            </div>
+                        </li>
+                        <li class="notice">
+                            <div class="notice__item">
+                                <div class="notice-label notice-label--announce">
+                                    <p>안내사항</p>
+                                </div>
+                                <div class="notice__text">
+                                    <img src="images/10_notice_icon07.svg" alt="icon7">
+                                    <p class="text"><span>어린이날 방문 이벤트</span></p>
+                                </div>
+                            </div>
+                            <div class="notice-date">
+                                <p>2025.02.01</p>
+                            </div>
+                        </li>
+                    </ul><!-- .cs__notice -->
+                </div><!-- .cs__notice-wrap -->
+
+                <div class="cs__number-wrap">
+                    <!-- 고객센터 -->
+                    <div class="cs__title-area">
+                        <h2 class="cs__title">고객센터</h2>
+                    </div><!-- cs__title-area -->
+                    <div class="cs__number">
+                        <div class="number-box cs__wrap">
+                            <!-- 전화문의 -->
+                            <div class="number-text">
+                                <h3>전화상담</h3>
+                                <p>수~일 9:00~18:00</p>
+                            </div> <!-- .number-text -->
+                            <a href="#">
+                                <div class="number">
+                                    <h3>051-5252-8282</h3>
+                                    <img src="images/10_cs_icon_copy.svg" alt="copy">
+                                </div><!-- .number -->
+                            </a>
+                        </div><!-- .number-box -->
+                        <div class="number-box cs__wrap">
+                            <!-- 1:1상담 -->
+                            <div class="number-text">
+                                <h3>1:1 고객상담</h3>
+                                <p>매일 9:00~18:00</p>
+                            </div> <!-- .number-text -->
+                            <a href="#">
+                                <div class="number">
+                                    <img src="images/10_cs_icon_write.svg" alt="write">
+                                    <h4>문의글 작성하기</h4>
+                                </div><!-- .number2 -->
+                            </a>
+                        </div><!-- .number-box -->
+                    </div><!-- .cs__number -->
+                </div><!-- .cs__number-wrap -->
+            </section>
+            <!-- cs E -->
+
+            <!-- sns S -->
+            <section id="sns">
+                <p class="sns__text">
+                    부비투어가 더 궁금하다면?
+                </p><!-- .sns__text -->
+                <ul class="sns__img">
+                    <li><a href="#"><img src="images/10_sns_icon01.svg" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/10_sns_icon02.svg" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/10_sns_icon03.svg" alt="유튜브"></a></li>
+                </ul><!-- .sns__img -->
+                <ul class="donation-list">
+                    <li><a href="https://dcb.or.kr/main/"><img src="images/11_footer_logo01.svg" alt="logo01"></a></li>
+                    <li><a href="https://www.busan.go.kr/index"><img src="images/11_footer_logo02.svg" alt="logo02"></a>
+                    </li>
+                    <li><a href="https://www.visitbusan.net/kr/index.do"><img src="images/11_footer_logo03.svg"
+                                alt="logo03"></a></li>
+                    <li><a href="https://www.busanmice.or.kr/main.do"><img src="images/11_footer_logo04.svg"
+                                alt="logo04"></a></li>
+                    <li><a href="https://mobile.dureraum.org:44500/bccm/main/main.do?rbsIdx=1"><img
+                                src="images/11_footer_logo05.svg" alt="logo05"></a></li>
+                    <li><a href="https://knto.or.kr/index"><img src="images/11_footer_logo06.svg" alt="logo06"></a></li>
+                </ul><!-- donation-list -->
+            </section>
+            <!-- sns E -->
+        </main>
+        <!-- main E -->
+
+        <!-- footer S -->
+        <footer>
+            <div class="ocean">
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div><!-- .ocean -->
+
+            <div class="footer__text-wrap">
+                <ul class="footer__text">
+                    <li><a href="#">회사소개</a></li>
+                    <li class="dot">•</li>
+                    <li><a href="#">운송약관</a></li>
+                    <li class="dot">•</li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li class="dot">•</li>
+                    <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+                </ul><!-- .footer__text -->
+                <p class="footer__info">
+                    사업자등록번호 : 617-82-12523
+                    <br>
+                    (우)48821 부산광역시 동구 중앙대로 192 한국교직원 공제회 부산회관 701호
+                    <br>
+                    Copyright © 2013 BUBI TOUR. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        <!-- footer E -->
+    </div><!-- #wrap -->
+
+    <!-- 필수 스크립트 연결 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'load'
+        });
+    </script>
+
+    <!-- 제어 코드 연결 -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+</html>
