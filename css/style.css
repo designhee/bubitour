@@ -1935,7 +1935,7 @@ body {
     border-radius: 200px;
     display: flex;
     justify-content: center;
-    align-items: left;
+    /* align-items: flex-start; */
     flex-direction: column;
     padding: 24px;
     color: #fff;
@@ -2052,7 +2052,7 @@ body {
 
 .shop__text-wrap p {
     font-size: 16px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .shop__text-wrap strong {
@@ -2192,10 +2192,6 @@ body {
     color: var(--primary);
     font-weight: 700;
     transition: all .3s linear;
-}
-
-.cs__title-area a:hover i {
-    transform: rotateX('180deg');
 }
 
 .cs__notice {
