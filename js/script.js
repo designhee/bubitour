@@ -41,7 +41,34 @@ document.querySelectorAll('.gnb a[href^="#"], .util a[href^="#"]').forEach(link 
 });
 
 // 어사이드
-const aside = document.querySelector(".aside-menu");
+
+$(function(){
+            //맨 위 부드럽게 이동
+            //.btn-top을 클릭하면,
+            $(".btn-top").click(function(){
+                //html, body에게 애니메이션을 준다.
+                $("html,body").animate({
+                    // 스크롤 세로 위치 0
+                    scrollTop : '0'
+                    // 1.5초 동안
+                },1500);
+            });
+
+            //일정 구간부터 버튼 나타나게 하기
+            //.topBtn을 숨긴다.
+            $(".aside-menu").hide();
+            //스크롤하면, 
+            $(window).scroll(function(){
+                //100보다 크면 보이고, 100보다 작으면 사라진다.
+                if ($(this).scrollTop() > 100) {
+                    $(".aside-menu").fadeIn()
+                } else {
+                    $(".aside-menu").fadeOut()
+                }
+            });
+        });
+
+/* const aside = document.querySelector(".aside-menu");
 let asideBaseTop = 400; // 초기 위치
 
 window.addEventListener("scroll", () => {
@@ -59,7 +86,7 @@ document.querySelector('.btn-top').addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
-});
+}); */
 
 //메인 배너 스와이퍼
 const progressCircle = document.querySelector("#hero .autoplay-progress svg");
