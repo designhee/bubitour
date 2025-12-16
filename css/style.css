@@ -407,7 +407,7 @@ body {
 /* ---------------------aside */
 /* ---------------------aside */
 .aside-menu {
-    position: absolute;
+    position: fixed;
     /* ← fixed 대신 absolute 사용 */
     right: 0;
     top: 400px;
