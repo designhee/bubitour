@@ -1,24 +1,3 @@
-//헤더 투명도 변환
-// let lastScroll = 0;
-// const header = document.querySelector("#header");
-
-// window.addEventListener("scroll", () => {
-//     const current = window.scrollY;
-
-//     if (current > lastScroll) {
-//         // 아래로 스크롤 → 숨기기
-//         header.classList.add("hide");
-//     } else {
-//         // 위로 스크롤 → 보이기
-//         header.classList.remove("hide");
-//     }
-//     lastScroll = current;
-
-//     if (current <= 0) {
-//         header.classList.remove("hide");
-//     }
-// });
-
 //gnb 클릭 시
 document.querySelectorAll('.gnb a[href^="#"], .util a[href^="#"]').forEach(link => {
     link.addEventListener('click', function (e) {
@@ -68,25 +47,6 @@ $(function(){
             });
         });
 
-/* const aside = document.querySelector(".aside-menu");
-let asideBaseTop = 400; // 초기 위치
-
-window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-
-    // 스크롤할 때 따라오는 위치 계산
-    const targetTop = asideBaseTop + scrollY;
-
-    // 부드럽게 이동
-    aside.style.top = targetTop + "px";
-});
-
-document.querySelector('.btn-top').addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}); */
 
 //메인 배너 스와이퍼
 const progressCircle = document.querySelector("#hero .autoplay-progress svg");
